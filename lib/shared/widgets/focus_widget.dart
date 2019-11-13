@@ -141,7 +141,7 @@ class _CircleModePhoto extends CustomClipper<Path> {
 return new Path()
       ..addOval(new Rect.fromCircle(
           center: new Offset(size.width / 2, size.height / 2),
-          radius: size.width * 0.45))
+          radius: size.width * 0.4))
       ..addRect(new Rect.fromLTWH(0.0, 0.0, size.width, size.height))
       ..fillType = PathFillType.evenOdd;
   }
