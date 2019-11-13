@@ -88,10 +88,10 @@ class _RectangleModePhoto extends CustomClipper<Path> {
     var reactPath = Path();
 
     //reactPath.moveTo(size.width/4, size.height/4);
-    reactPath.moveTo(size.width/10, size.height/10);
-    reactPath.lineTo(size.width/10, size.height*7/12);
-    reactPath.lineTo(size.width*7/12, size.height*7/12);
-    reactPath.lineTo(size.width*7/12, size.height/10);
+    reactPath.moveTo(size.width-20, size.height-20);
+    reactPath.lineTo(size.width-20, size.height-20);
+    reactPath.lineTo(size.width-20, size.height-20);
+    reactPath.lineTo(size.width-20, size.height-20);
 
     path.addPath(reactPath, Offset(0,0));
     path.addRect(
