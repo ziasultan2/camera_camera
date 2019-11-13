@@ -90,7 +90,7 @@ class _RectangleModePhoto extends CustomClipper<Path> {
     //reactPath.moveTo(size.width/4, size.height/4);
     reactPath.moveTo(size.width/10, size.height/10);
     reactPath.lineTo(size.width/10, size.height*3/4);
-    reactPath.lineTo(size.width*3/4, size.height*3/4);
+    reactPath.lineTo(size.width*3/8, size.height*3/4);
     reactPath.lineTo(size.width*3/4, size.height/10);
 
     path.addPath(reactPath, Offset(0,0));
@@ -141,7 +141,7 @@ class _CircleModePhoto extends CustomClipper<Path> {
 return new Path()
       ..addOval(new Rect.fromCircle(
           center: new Offset(size.width / 2, size.height / 2),
-          radius: size.width * 0.4))
+          radius: size.width * 0.6))
       ..addRect(new Rect.fromLTWH(0.0, 0.0, size.width, size.height))
       ..fillType = PathFillType.evenOdd;
   }
